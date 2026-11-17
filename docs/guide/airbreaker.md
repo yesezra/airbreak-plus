@@ -37,6 +37,7 @@ connection to the device, and only SWD needs an opened device.
 | [Windows](#windows) | Windows | In WSL |
 | [Linux](#linux) | Linux | Directly on Linux |
 | [WSL](#wsl-window-inside-wsl) | Inside WSL, shown through WSLg | Directly inside WSL |
+| macOS | Directly on macOS | Directly in macOS |
 
 ### Windows
 
@@ -97,6 +98,17 @@ appears, check that `echo $DISPLAY` is not empty and that WSLg is up to date
 
 If you would rather keep the repository in Windows and only use WSL for the
 tools, follow the [Windows](#windows) route instead.
+
+### WSL (window inside WSL)
+
+You will need to install a python3 through Homebrew:
+
+```bash
+brew install python3 python-tk
+python3 python/airbreaker.py
+```
+
+The toolchain from the [macOS Setup](macos_setup.md) is used as it is. 
 
 ## A tour of the window
 
